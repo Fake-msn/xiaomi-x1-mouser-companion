@@ -1,0 +1,12 @@
+# X1 Companion has NO required third-party dependencies.
+#
+# Core stack: Python 3.10+ standard library only
+#   ctypes / ctypes.wintypes, winreg, json, threading, queue, tempfile, unittest
+#
+# Optional (NOT required):
+#   PySide6        - if you want to add a Qt GUI under ui/
+#   pyinstaller    - if you want a single-file frozen build (build.bat already
+#                    produces a portable source folder without it)
+#
+# The shipped UI is a stdlib console to keep the core dependency-free;
+# the ui/ layer is decoupled from core/ for optional GUI extensions.

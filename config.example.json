@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "schema": "x1-companion/1",
+  "active_profile": "default",
+  "profiles": {
+    "default": {
+      "label": "默认（所有应用）",
+      "apps": [],
+      "priority": 0,
+      "mappings": {
+        "left": "none",
+        "right": "none",
+        "middle": "none",
+        "xbutton1": "none",
+        "xbutton2": "none",
+        "wheel_up": "none",
+        "wheel_down": "none",
+        "hscroll_left": "none",
+        "hscroll_right": "none",
+        "dpi_switch": "none"
+      },
+      "gestures": {},
+      "actions_ring_slots": []
+    },
+    "coding": {
+      "label": "编码（VS Code / Cursor / 终端）",
+      "apps": ["Code.exe", "Cursor.exe", "WindowsTerminal.exe", "Windows Terminal", "pwsh.exe"],
+      "priority": 20,
+      "mappings": {
+        "xbutton1": "custom:0x10+0x11+0x50",
+        "xbutton2": "copy"
+      },
+      "gestures": {},
+      "actions_ring_slots": []
+    },
+    "browser": {
+      "label": "浏览器（Chrome / Edge）",
+      "apps": ["chrome.exe", "Google Chrome", "msedge.exe", "Edge"],
+      "priority": 15,
+      "mappings": {
+        "xbutton1": "browser_back",
+        "xbutton2": "browser_forward"
+      },
+      "gestures": {},
+      "actions_ring_slots": []
+    },
+    "design": {
+      "label": "设计（Photoshop / 四向滑动手势）",
+      "apps": ["Photoshop.exe", "Adobe Photoshop"],
+      "priority": 15,
+      "mappings": {
+        "xbutton1": "gesture_swipe"
+      },
+      "gestures": {
+        "xbutton1": {
+          "left": "undo",
+          "right": "redo",
+          "up": "volume_up",
+          "down": "volume_down",
+          "tap": "save"
+        }
+      },
+      "actions_ring_slots": []
+    },
+    "gaming": {
+      "label": "游戏（全透传，规避反作弊）",
+      "apps": ["steam.exe", "Valorant.exe", "cs2.exe"],
+      "priority": 30,
+      "mappings": {
+        "xbutton1": "none",
+        "xbutton2": "none"
+      },
+      "gestures": {},
+      "actions_ring_slots": []
+    }
+  },
+  "settings": {
+    "start_minimized": false,
+    "start_at_login": false,
+    "language": "zh-CN",
+    "bypass": false,
+    "game_mode": false,
+    "ownership": {
+      "xbutton1": "companion",
+      "xbutton2": "companion"
+    },
+    "device_filter_enabled": false,
+    "device_whitelist": [],
+    "coexist_delay_ms": 1500,
+    "coexist_detect_ghub": true,
+    "gesture_threshold_px": 25,
+    "gesture_commit_window_ms": 400,
+    "gesture_cross_ratio": 0.5,
+    "poll_interval_s": 0.3,
+    "log_level": "info"
+  }
+}

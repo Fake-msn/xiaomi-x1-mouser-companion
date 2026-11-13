@@ -1,0 +1,35 @@
+# ---- Python bytecode / caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Build artifacts (build.bat output is a source mirror, regenerable) ----
+dist/
+build/
+*.egg-info/
+*.spec
+
+# ---- Local runtime config ----
+# Exact name only: NEVER use config*.json, it would hide config.example.json
+config.json
+*.log
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- IDE / editor ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---- OS junk ----
+Thumbs.db
+Desktop.ini
+.DS_Store
